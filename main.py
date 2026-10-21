@@ -59,7 +59,12 @@ if acceso:
                     cantidades.append(int(cantidad_texto))
                     print("Producto agregado correctamente")
         elif opcion == "2":
-            print("Listar productos (pendiente)")
+            print("--- Lista de productos ---")
+            if len(codigos) == 0:
+                print("No hay productos registrados.")
+            else:
+                for i in range(len(codigos)):
+                    print(codigos[i], "|", nombres[i], "| Q", precios[i], "| Cant:", cantidades[i])
         elif opcion == "3":
             print("Buscar producto (pendiente)")
         elif opcion == "4":
