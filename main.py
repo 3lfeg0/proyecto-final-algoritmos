@@ -1,4 +1,4 @@
-# datos de la tienda 
+# datos de la tienda
 codigos = []
 nombres = []
 precios = []
@@ -19,7 +19,8 @@ while intentos < 3 and not acceso:
     else:
         intentos = intentos + 1
         print("Datos incorrectos. Intentos restantes:", 3 - intentos)
-# Menuu
+
+# Menú
 if acceso:
     opcion = ""
     while opcion != "6":
@@ -34,7 +35,29 @@ if acceso:
         opcion = input("Elige una opción: ")
 
         if opcion == "1":
-            print("Agregar producto (pendiente)")
+            print("--- Agregar producto ---")
+            codigo = input("Código: ").strip()
+            if codigo == "":
+                print("El código no puede estar vacío.")
+            elif codigo in codigos:
+                print("Ya existe un producto con ese código.")
+            else:
+                nombre = input("Nombre: ").strip()
+                precio_texto = input("Precio (Q): ").strip()
+                cantidad_texto = input("Cantidad: ").strip()
+
+                if nombre == "":
+                    print("El nombre no puede estar vacío.")
+                elif not precio_texto.replace(".", "", 1).isdigit():
+                    print("El precio debe ser un número, por ejemplo 25.50.")
+                elif not cantidad_texto.isdigit():
+                    print("La cantidad debe ser un número entero.")
+                else:
+                    codigos.append(codigo)
+                    nombres.append(nombre)
+                    precios.append(float(precio_texto))
+                    cantidades.append(int(cantidad_texto))
+                    print("Producto agregado correctamente")
         elif opcion == "2":
             print("Listar productos (pendiente)")
         elif opcion == "3":
