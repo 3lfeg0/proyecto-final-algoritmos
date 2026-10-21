@@ -25,7 +25,7 @@ if acceso:
     opcion = ""
     while opcion != "6":
         print()
-        print("===== TIENDA =====")
+        print("TIENDA")
         print("1. Agregar producto")
         print("2. Listar productos")
         print("3. Buscar producto")
@@ -59,14 +59,25 @@ if acceso:
                     cantidades.append(int(cantidad_texto))
                     print("Producto agregado correctamente")
         elif opcion == "2":
-            print("--- Lista de productos ---")
+            print("Lista de productos")
             if len(codigos) == 0:
                 print("No hay productos registrados.")
             else:
                 for i in range(len(codigos)):
                     print(codigos[i], "|", nombres[i], "| Q", precios[i], "| Cant:", cantidades[i])
         elif opcion == "3":
-            print("Buscar producto (pendiente)")
+            print("Buscar producto")
+            buscado = input("Código o nombre del producto: ").strip()
+            if buscado == "":
+                print("Debes escribir algo para buscar.")
+            else:
+                encontrado = False
+                for i in range(len(codigos)):
+                    if codigos[i] == buscado or buscado.lower() in nombres[i].lower():
+                        print(codigos[i], "|", nombres[i], "| Q", precios[i], "| Cant:", cantidades[i])
+                        encontrado = True
+                if not encontrado:
+                    print("No se encontró ningún producto con ese dato.")
         elif opcion == "4":
             print("Eliminar producto (pendiente)")
         elif opcion == "5":
