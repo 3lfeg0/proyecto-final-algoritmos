@@ -35,12 +35,12 @@ if acceso:
         opcion = input("Elige una opción: ")
 
         if opcion == "1":
-            print("--- Agregar producto ---")
+            print("Agregar productos")
             codigo = input("Código: ").strip()
             if codigo == "":
                 print("El código no puede estar vacío.")
             elif codigo in codigos:
-                print("Ya existe un producto con ese código.")
+                print("Ya existe un producto con este código.")
             else:
                 nombre = input("Nombre: ").strip()
                 precio_texto = input("Precio (Q): ").strip()
