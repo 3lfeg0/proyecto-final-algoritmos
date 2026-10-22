@@ -126,3 +126,4 @@ if acceso:
             print("Opción no válida. Escribe un número del 1 al 6.")
 else:
     print("Demasiados intentos fallidos. El programa se cerrará.")
+    print("vuelve a internar")
