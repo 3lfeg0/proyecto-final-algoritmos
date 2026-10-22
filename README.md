@@ -4,5 +4,4 @@ proyecto grupal, sistema de gestion en Python
 
 
 
-holaa
 
