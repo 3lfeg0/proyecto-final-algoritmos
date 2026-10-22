@@ -36,7 +36,7 @@ if acceso:
 
         if opcion == "1":
             print("Agregar productos")
-            codigo = input("Código: ").strip()
+            codigo = input("Código: ").strip().upper()
             if codigo == "":
                 print("El código no puede estar vacío.")
             elif codigo in codigos:
@@ -73,13 +73,28 @@ if acceso:
             else:
                 encontrado = False
                 for i in range(len(codigos)):
-                    if codigos[i] == buscado or buscado.lower() in nombres[i].lower():
+                    if codigos[i] == buscado.upper() or buscado.lower() in nombres[i].lower():
                         print(codigos[i], "|", nombres[i], "| Q", precios[i], "| Cant:", cantidades[i])
                         encontrado = True
                 if not encontrado:
                     print("No se encontró ningún producto con ese dato.")
         elif opcion == "4":
-            print("Eliminar producto (pendiente)")
+            print("Eliminar producto")
+            codigo = input("Código del producto que quieres eliminar: ").strip().upper()
+            if codigo in codigos:
+                posicion = codigos.index(codigo)
+                print("Se eliminará:", nombres[posicion])
+                confirmar = input("¿Seguro? (s/n): ").strip().lower()
+                if confirmar == "s":
+                    codigos.pop(posicion)
+                    nombres.pop(posicion)
+                    precios.pop(posicion)
+                    cantidades.pop(posicion)
+                    print("Producto eliminado.")
+                else:
+                    print("Eliminación cancelada.")
+            else:
+                print("No existe un producto con ese código.")
         elif opcion == "5":
             print("Ver cálculos (pendiente)")
         elif opcion == "6":
