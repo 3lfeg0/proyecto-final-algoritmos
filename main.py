@@ -96,9 +96,32 @@ if acceso:
             else:
                 print("No existe un producto con ese código.")
         elif opcion == "5":
-            print("Ver cálculos (pendiente)")
+            print("Cálculos del inventario")
+            if len(codigos) == 0:
+                print("No hay productos registrados.")
+            else:
+                total_inventario = 0
+                total_unidades = 0
+                suma_precios = 0
+                pos_caro = 0
+                pos_barato = 0
+                for i in range(len(codigos)):
+                    total_inventario = total_inventario + precios[i] * cantidades[i]
+                    total_unidades = total_unidades + cantidades[i]
+                    suma_precios = suma_precios + precios[i]
+                    if precios[i] > precios[pos_caro]:
+                        pos_caro = i
+                    if precios[i] < precios[pos_barato]:
+                        pos_barato = i
+                promedio = suma_precios / len(codigos)
+                print("Cantidad de productos:", len(codigos))
+                print("Total de unidades en inventario:", total_unidades)
+                print("Valor total del inventario: Q", round(total_inventario, 2))
+                print("Precio promedio: Q", round(promedio, 2))
+                print("Producto más caro:", nombres[pos_caro], "- Q", precios[pos_caro])
+                print("Producto más barato:", nombres[pos_barato], "- Q", precios[pos_barato])
         elif opcion == "6":
-            print("Hasta luego.")
+            print("Hasta luego")
         else:
             print("Opción no válida. Escribe un número del 1 al 6.")
 else:
