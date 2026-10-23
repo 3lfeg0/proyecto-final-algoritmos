@@ -96,30 +96,52 @@ if acceso:
             else:
                 print("No existe un producto con ese código.")
         elif opcion == "5":
-            print("Cálculos del inventario")
+            print("\n" + "=" * 40)
+            print("       CALCULOS DEL INVENTARIO")
+            print("=" * 40)
+
             if len(codigos) == 0:
-                print("No hay productos registrados.")
+                print("\nNo hay productos registrados.")
+
             else:
                 total_inventario = 0
                 total_unidades = 0
                 suma_precios = 0
                 pos_caro = 0
                 pos_barato = 0
+
                 for i in range(len(codigos)):
-                    total_inventario = total_inventario + precios[i] * cantidades[i]
-                    total_unidades = total_unidades + cantidades[i]
-                    suma_precios = suma_precios + precios[i]
+                    total_inventario += precios[i] * cantidades[i]
+                    total_unidades += cantidades[i]
+                    suma_precios += precios[i]
+
                     if precios[i] > precios[pos_caro]:
                         pos_caro = i
+
                     if precios[i] < precios[pos_barato]:
                         pos_barato = i
+
                 promedio = suma_precios / len(codigos)
-                print("Cantidad de productos:", len(codigos))
-                print("Total de unidades en inventario:", total_unidades)
-                print("Valor total del inventario: Q", round(total_inventario, 2))
-                print("Precio promedio: Q", round(promedio, 2))
-                print("Producto más caro:", nombres[pos_caro], "- Q", precios[pos_caro])
-                print("Producto más barato:", nombres[pos_barato], "- Q", precios[pos_barato])
+
+                print("\n--- 1. RESUMEN GENERAL ---")
+                print(f"Cantidad de productos: {len(codigos)}")
+                print(f"Total de unidades: {total_unidades}")
+
+                print("\n--- 2. VALORES DEL INVENTARIO ---")
+                print(f"Valor total: Q {total_inventario:,.2f}")
+                print(f"Precio promedio: Q {promedio:,.2f}")
+
+                print("\n--- 3. COMPARACION DE PRECIOS ---")
+                print(
+                    f"Producto mas caro: {nombres[pos_caro]}"
+                    f" - Q {precios[pos_caro]:,.2f}"
+                )
+                print(
+                    f"Producto mas barato: {nombres[pos_barato]}"
+                    f" - Q {precios[pos_barato]:,.2f}"
+                )
+
+            print("\n" + "=" * 40)
         elif opcion == "6":
             print("Hasta luego")
         else:
