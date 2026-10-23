@@ -59,12 +59,34 @@ if acceso:
                     cantidades.append(int(cantidad_texto))
                     print("Producto agregado correctamente")
         elif opcion == "2":
-            print("Lista de productos")
+            print("\n" + "=" * 65)
+            print("                 LISTA DE PRODUCTOS")
+            print("=" * 65)
+
             if len(codigos) == 0:
                 print("No hay productos registrados.")
             else:
+                print(
+                    f"{'CODIGO':<10}"
+                    f"{'NOMBRE':<20}"
+                    f"{'PRECIO':>15}"
+                    f"{'CANTIDAD':>15}"
+                )
+
+                print("-" * 65)
+
                 for i in range(len(codigos)):
-                    print(codigos[i], "|", nombres[i], "| Q", precios[i], "| Cant:", cantidades[i])
+                    print(
+                        f"{codigos[i]:<10}"
+                        f"{nombres[i]:<20}"
+                        f"{('Q ' + format(precios[i], ',.2f')):>15}"
+                        f"{cantidades[i]:>15}"
+                    )
+
+                print("-" * 65)
+                print(f"Total de productos: {len(codigos)}")
+
+            print("=" * 65)
         elif opcion == "3":
             print("Buscar producto")
             buscado = input("Código o nombre del producto: ").strip()
