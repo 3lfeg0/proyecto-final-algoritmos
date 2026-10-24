@@ -11,7 +11,7 @@ Cada producto tiene cuatro datos: "código, nombre, precio y cantidad". Los dato
 
 # Estado del proyecto
 
- Login con usuario y contraseña (3 intentos para ingresar datos correctos, si esto no se cumple el programa finaliza su funcion)
+-Login con usuario y contraseña (3 intentos para ingresar datos correctos, si esto no se cumple el programa finaliza su funcion)
 - Menú de opciones
 - Agregar producto con validaciones
 - Listar productos
