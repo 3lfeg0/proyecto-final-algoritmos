@@ -1,12 +1,3 @@
-# PROYECTO FINAL DE ALGORITMOS. 
-
-# Integrantes.
-1. Angel Rolando Sánchez Juárez. 0902-26-9179
-2. Elfego Ovidio Hernández Cifuentes. 0903-26-7513
-
-# Sistema de gestión de una tienda.
-
-Este es un sistema de consola desarrollado en "PYTHON" para administrar el inventario de una tienda: registra productos, los coloca en una lista, los busca, los elimina y calcula datos importantes del inventario.
 
 # Descripcion del sistema.
 Al iniciar el programa pide "USUARIO Y CONTRASEÑA" y valida el acceso antes de mostrar el menú. Si el acceso es correcto, el menú se repite hasta que el usuario elige la opción "SALIR". El programa cuenta con 3 intentos para colocar los datos correctos de usuario y contraseña, si quien usa el programa pierde los 3 intentos este se cierra.
