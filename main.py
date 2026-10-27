@@ -20,7 +20,6 @@ while intentos < 3 and not acceso:
         intentos = intentos + 1
         print("Datos incorrectos. Intentos restantes:", 3 - intentos)
 
-# ===== MENÚ PRINCIPAL =====
 # Menú
 if acceso:
     opcion = ""
@@ -35,7 +34,7 @@ if acceso:
         print("6. Salir")
         opcion = input("Elige una opción: ")
 
-        # ----- Opción 1: Agregar producto -----
+        # Opción 1: Agregar producto
         if opcion == "1":
             print("Agregar productos")
             codigo = input("Código: ").strip().upper()
@@ -60,7 +59,7 @@ if acceso:
                     precios.append(float(precio_texto))
                     cantidades.append(int(cantidad_texto))
                     print("Producto agregado correctamente")
-        # ----- Opción 2: Listar productos -----
+        # Opción 2: Listar productos 
         elif opcion == "2":
             print("\n" + "=" * 65)
             print("                 LISTA DE PRODUCTOS")
@@ -90,7 +89,7 @@ if acceso:
                 print(f"Total de productos: {len(codigos)}")
 
             print("=" * 65)
-        # ----- Opción 3: Buscar producto -----
+        #  Opción 3: Buscar producto
         elif opcion == "3":
             print("Buscar producto")
             buscado = input("Código o nombre del producto: ").strip()
@@ -104,7 +103,7 @@ if acceso:
                         encontrado = True
                 if not encontrado:
                     print("No se encontró ningún producto con ese dato.")
-        # ----- Opción 4: Eliminar producto -----
+        # Opción 4: Eliminar producto
         elif opcion == "4":
             print("Eliminar producto")
             codigo = input("Código del producto que quieres eliminar: ").strip().upper()
@@ -122,7 +121,7 @@ if acceso:
                     print("Eliminación cancelada.")
             else:
                 print("No existe un producto con ese código.")
-        # ----- Opción 5: Cálculos del inventario -----
+        # Opción 5: Cálculos del inventario
         elif opcion == "5":
             print("\n" + "=" * 40)
             print("       CALCULOS DEL INVENTARIO")
@@ -170,7 +169,7 @@ if acceso:
                 )
 
             print("\n" + "=" * 40)
-        # ----- Opción 6: Salir -----
+        # Opción 6: Salir
         elif opcion == "6":
             print("Hasta luego")
         else:
