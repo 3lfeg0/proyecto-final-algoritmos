@@ -60,6 +60,7 @@ if acceso:
                     precios.append(float(precio_texto))
                     cantidades.append(int(cantidad_texto))
                     print("Producto agregado correctamente")
+        # ----- Opción 2: Listar productos -----
         elif opcion == "2":
             print("\n" + "=" * 65)
             print("                 LISTA DE PRODUCTOS")
