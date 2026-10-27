@@ -34,6 +34,7 @@ if acceso:
         print("6. Salir")
         opcion = input("Elige una opción: ")
 
+        # ----- Opción 1: Agregar producto -----
         if opcion == "1":
             print("Agregar productos")
             codigo = input("Código: ").strip().upper()
