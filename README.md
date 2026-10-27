@@ -1,7 +1,4 @@
-PROYECTO FINAL DE ALGORITMOS
+# Proyecto-final-algoritmos
 
-proyecto grupal, sistema de gestion en Python
-
-documentación de lo trabajado 
-
+Proyecto grupal, sistema de gestión en Python
 
