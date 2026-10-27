@@ -1,8 +1,8 @@
 # PROYECTO FINAL DE ALGORITMOS. 
 
 # Integrantes.
-1. Angel Rolando Sánchez Juárez.
-2. Elfego Ovidio Hernández Cifuentes.
+1. Angel Rolando Sánchez Juárez. 0902-26-9179
+2. Elfego Ovidio Hernández Cifuentes. 0903-26-7513
 
 # Sistema de gestión de una tienda.
 
