@@ -20,6 +20,7 @@ while intentos < 3 and not acceso:
         intentos = intentos + 1
         print("Datos incorrectos. Intentos restantes:", 3 - intentos)
 
+# ===== MENÚ PRINCIPAL =====
 # Menú
 if acceso:
     opcion = ""
