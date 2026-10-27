@@ -117,6 +117,7 @@ if acceso:
                     print("Eliminación cancelada.")
             else:
                 print("No existe un producto con ese código.")
+        # ----- Opción 5: Cálculos del inventario -----
         elif opcion == "5":
             print("\n" + "=" * 40)
             print("       CALCULOS DEL INVENTARIO")
