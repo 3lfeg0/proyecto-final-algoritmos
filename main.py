@@ -87,6 +87,7 @@ if acceso:
                 print(f"Total de productos: {len(codigos)}")
 
             print("=" * 65)
+        # ----- Opción 3: Buscar producto -----
         elif opcion == "3":
             print("Buscar producto")
             buscado = input("Código o nombre del producto: ").strip()
