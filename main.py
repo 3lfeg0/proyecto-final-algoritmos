@@ -170,6 +170,7 @@ if acceso:
                 )
 
             print("\n" + "=" * 40)
+        # ----- Opción 6: Salir -----
         elif opcion == "6":
             print("Hasta luego")
         else:
