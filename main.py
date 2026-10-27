@@ -104,6 +104,7 @@ if acceso:
                         encontrado = True
                 if not encontrado:
                     print("No se encontró ningún producto con ese dato.")
+        # ----- Opción 4: Eliminar producto -----
         elif opcion == "4":
             print("Eliminar producto")
             codigo = input("Código del producto que quieres eliminar: ").strip().upper()
