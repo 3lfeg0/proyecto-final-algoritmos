@@ -1,5 +1,9 @@
 # PROYECTO FINAL DE ALGORITMOS. 
 
+# Integrantes.
+1. Angel Rolando Sánchez Juárez.
+2. Elfego Ovidio Hernández Cifuentes.
+
 # Sistema de gestión de una tienda.
 
 Este es un sistema de consola desarrollado en "PYTHON" para administrar el inventario de una tienda: registra productos, los coloca en una lista, los busca, los elimina y calcula datos importantes del inventario.
