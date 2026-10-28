@@ -13,3 +13,9 @@ while intentos < 3 and not acceso:
     else:
         intentos = intentos + 1
         print("Datos incorrectos. Intentos restantes:", 3 - intentos)
+
+#¿QUE HACE?
+#Marca la sección donde se guardan el usuario y la contraseña correctos 
+#(USUARIO = "yo" y CLAVE = "101"). Están en mayúsculas porque por costumbre así se escriben los valores que no deben cambiar (constantes).
+#Justo debajo hay un bloque sin comentario que controla el inicio de sesión: un while que da 3 intentos para escribir bien el usuario y la clave. 
+#Si aciertan, acceso pasa a True. Si fallan, intentos sube de 1 en 1 y se muestra cuántos quedan.
