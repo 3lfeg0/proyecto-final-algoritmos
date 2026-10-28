@@ -1,0 +1,15 @@
+# datos de acceso
+USUARIO = "yo"
+CLAVE = "101"
+
+intentos = 0
+acceso = False
+while intentos < 3 and not acceso:
+    usuario = input("Usuario: ")
+    clave = input("Contraseña: ")
+    if usuario == USUARIO and clave == CLAVE:
+        acceso = True
+        print("Bienvenido a la tienda.")
+    else:
+        intentos = intentos + 1
+        print("Datos incorrectos. Intentos restantes:", 3 - intentos)
