@@ -1,0 +1,13 @@
+# Menú
+if acceso:
+    opcion = ""
+    while opcion != "6":
+        print()
+        print("TIENDA")
+        print("1. Agregar producto")
+        print("2. Listar productos")
+        print("3. Buscar producto")
+        print("4. Eliminar producto")
+        print("5. Ver cálculos")
+        print("6. Salir")
+        opcion = input("Elige una opción: ")
