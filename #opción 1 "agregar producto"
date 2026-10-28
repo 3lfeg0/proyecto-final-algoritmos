@@ -1,0 +1,25 @@
+ # Opción 1: Agregar producto
+        if opcion == "1":
+            print("Agregar productos")
+            codigo = input("Código: ").strip().upper()
+            if codigo == "":
+                print("El código no puede estar vacío.")
+            elif codigo in codigos:
+                print("Ya existe un producto con este código.")
+            else:
+                nombre = input("Nombre: ").strip()
+                precio_texto = input("Precio (Q): ").strip()
+                cantidad_texto = input("Cantidad: ").strip()
+
+                if nombre == "":
+                    print("El nombre no puede estar vacío.")
+                elif not precio_texto.replace(".", "", 1).isdigit():
+                    print("El precio debe ser un número, por ejemplo 25.50.")
+                elif not cantidad_texto.isdigit():
+                    print("La cantidad debe ser un número entero.")
+                else:
+                    codigos.append(codigo)
+                    nombres.append(nombre)
+                    precios.append(float(precio_texto))
+                    cantidades.append(int(cantidad_texto))
+                    print("Producto agregado correctamente")
