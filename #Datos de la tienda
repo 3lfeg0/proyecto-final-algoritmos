@@ -3,3 +3,7 @@ codigos = []
 nombres = []
 precios = []
 cantidades = []
+
+#¿QUE HACE?
+#Esta parte marca la secion donde se crean las cuatro listas vacias Codigos, nombres, precio, cantidades.
+#son como cuatro columnas de una tabla
