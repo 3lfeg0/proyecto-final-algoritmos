@@ -23,3 +23,8 @@ Cada producto tiene cuatro datos: "código, nombre, precio y cantidad". Los dato
 - Eliminar producto
 - Calculos del inventario
 
+#  ORGANIZACION DEL EQUIPO
+
+El equipo trabajo en un repositorio de GitHub compartido, cada integrante subió su trabajo en commits frecuentes en donde se describieron los cambios realizados.
+PENDIENTE.
+
