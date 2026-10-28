@@ -1,0 +1,14 @@
+ #  Opción 3: Buscar producto
+        elif opcion == "3":
+            print("Buscar producto")
+            buscado = input("Código o nombre del producto: ").strip()
+            if buscado == "":
+                print("Debes escribir algo para buscar.")
+            else:
+                encontrado = False
+                for i in range(len(codigos)):
+                    if codigos[i] == buscado.upper() or buscado.lower() in nombres[i].lower():
+                        print(codigos[i], "|", nombres[i], "| Q", precios[i], "| Cant:", cantidades[i])
+                        encontrado = True
+                if not encontrado:
+                    print("No se encontró ningún producto con ese dato.")
