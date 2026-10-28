@@ -2,17 +2,23 @@
 Al ejecutarlo se le pediran los datos de "Usuario y contraseña" estos son: 
 Usuario = yo
 Contraseña = 101
+
 # Opciones del menu
    1. AGREGAR PRODUCTO.
 El programa pide codigo, nombre del producto precio del mismo y su cantidad ( estos 2 ultimos datos siempre deben de ser numeros de lo contrario el programa no los tomara como validos)
+
    2. LISTA DE PRODUCTOS.
 Muestra todos los productos registrados en una tabla.
+
   3. BUSQUEDA DE PRODUCTOS.
 Pide el codigo o parte del nombre y si estos se encuentran registrados se mostraran los datos del producto.
+
   4. ELIMINACION DE UN PRODUCTO.
 Pide un codigo muestra el producto y pide confirmacion antes de borrarlo.
+
   5. VER CALCULOS.
 Muestra el total de productos, el total de unidades, el valor total del inventario, el precio promedio, y el producato mas barato y el mas caro.
+
   6. SALIR.
 Cierra el programa, nada mas que agregar.
 
