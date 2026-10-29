@@ -4,6 +4,9 @@ Usuario = yo
 Contraseña = 101
 El cual debe de ingresar bien los datos ya que si ingresa una letra mayuscula o algun numero incorrecto el programa no podra iniciar
 
+#Lista de Menu
+Cuando el usuario ingrese sus datos de sesion se le abrira una lista de opciones el cual contiene el "menu" este listado le permitira escoger una de las 6 opciones que tiene.
+
 # Opciones del menu
    1. AGREGAR PRODUCTO.
 El programa pide codigo, nombre del producto precio del mismo y su cantidad ( estos 2 ultimos datos siempre deben de ser numeros de lo contrario el programa no los tomara como validos)
