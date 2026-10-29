@@ -25,6 +25,5 @@ Cada producto tiene cuatro datos: "código, nombre, precio y cantidad". Los dato
 
 #  ORGANIZACION DEL EQUIPO
 
-El equipo trabajo en un repositorio de GitHub compartido, cada integrante subió su trabajo en commits frecuentes en donde se describieron los cambios realizados.
-PENDIENTE.
-
+Los integrantes del equipo trabajamos en un repositorio de Github, subiendo commits de manera constante, para poder entendernos mientras trabajabamos utilizamos la plataforma Meet para compartir ideas sobre el proyecto.
+Es de gran importancia mencionar que cada cambio o adición al proyecto fue discutida antes de llevarse a la practica. 
