@@ -1,7 +1,8 @@
 # Inicio de sesion 
-Al ejecutarlo se le pediran los datos de "Usuario y contraseña" estos son: 
+Al iniciar o  ejecutar el programa se le pediran los datos de "Usuario y contraseña" los cuales son: 
 Usuario = yo
 Contraseña = 101
+El cual debe de ingresar bien los datos ya que si ingresa una letra mayuscula o algun numero incorrecto el programa no podra iniciar
 
 # Opciones del menu
    1. AGREGAR PRODUCTO.
