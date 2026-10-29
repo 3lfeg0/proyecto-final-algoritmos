@@ -9,7 +9,10 @@ Cuando el usuario ingrese sus datos de sesion se le abrira una lista de opciones
 
 # Opciones del menu
    1. AGREGAR PRODUCTO.
-El programa pide codigo, nombre del producto precio del mismo y su cantidad ( estos 2 ultimos datos siempre deben de ser numeros de lo contrario el programa no los tomara como validos)
+Esta opcion permite registrar o agregar un producto nuevo en el cual debe de ingresar los datos:
+Nombre del producto: puede ser letras y numeros.
+Precio del producto: aqui solo deben ser numeros  de lo contrario  no se podra ingresar el producto.
+Cantidad del producto: de la misma manera que el precio tambien tiene que ser numeros.
 
    2. LISTA DE PRODUCTOS.
 Muestra todos los productos registrados en una tabla.
