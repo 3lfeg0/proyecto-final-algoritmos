@@ -15,7 +15,7 @@ Precio del producto: aqui solo deben ser numeros  de lo contrario  no se podra i
 Cantidad del producto: de la misma manera que el precio tambien tiene que ser numeros.
 
    2. LISTA DE PRODUCTOS.
-Muestra todos los productos registrados en una tabla.
+MUESTRA CADA PRODUCTO QUE SE A INGRESADO Y LO MUESTRA EN UNA TABLA ORGANIZADA.
 
   3. BUSQUEDA DE PRODUCTOS.
 Pide el codigo o parte del nombre y si estos se encuentran registrados se mostraran los datos del producto.
