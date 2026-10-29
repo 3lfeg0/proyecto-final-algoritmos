@@ -20,7 +20,7 @@ while intentos < 3 and not acceso:
         intentos = intentos + 1
         print("Datos incorrectos. Intentos restantes:", 3 - intentos)
 
-# Menú
+# menu
 if acceso:
     opcion = ""
     while opcion != "6":
@@ -36,7 +36,10 @@ if acceso:
 
         # Opción 1: Agregar producto
         if opcion == "1":
-            print("Agregar productos")
+            print("\n" + "=" * 65)
+            print("                 AGREGAR PRODUCTOS")
+            print("=" * 65)
+
             codigo = input("Código: ").strip().upper()
             if codigo == "":
                 print("El código no puede estar vacío.")
@@ -58,8 +61,25 @@ if acceso:
                     nombres.append(nombre)
                     precios.append(float(precio_texto))
                     cantidades.append(int(cantidad_texto))
+                    print("-" * 65)
+                    print(
+                        f"{'CODIGO':<10}"
+                        f"{'NOMBRE':<20}"
+                        f"{'PRECIO':>15}"
+                        f"{'CANTIDAD':>15}"
+                    )
+                    print("-" * 65)
+                    print(
+                        f"{codigo:<10}"
+                        f"{nombre:<20}"
+                        f"{('Q ' + format(float(precio_texto), ',.2f')):>15}"
+                        f"{int(cantidad_texto):>15}"
+                    )
+                    print("-" * 65)
                     print("Producto agregado correctamente")
-        # Opción 2: Listar productos 
+
+            print("=" * 65)
+        # opción 2: Lista de productos
         elif opcion == "2":
             print("\n" + "=" * 65)
             print("                 LISTA DE PRODUCTOS")
@@ -89,9 +109,12 @@ if acceso:
                 print(f"Total de productos: {len(codigos)}")
 
             print("=" * 65)
-        #  Opción 3: Buscar producto
+        #  oPcion 3: busqueda de productos
         elif opcion == "3":
-            print("Buscar producto")
+            print("\n" + "=" * 65)
+            print("                 BUSCAR PRODUCTO")
+            print("=" * 65)
+
             buscado = input("Código o nombre del producto: ").strip()
             if buscado == "":
                 print("Debes escribir algo para buscar.")
@@ -99,13 +122,34 @@ if acceso:
                 encontrado = False
                 for i in range(len(codigos)):
                     if codigos[i] == buscado.upper() or buscado.lower() in nombres[i].lower():
-                        print(codigos[i], "|", nombres[i], "| Q", precios[i], "| Cant:", cantidades[i])
+                        if not encontrado:
+                            print("-" * 65)
+                            print(
+                                f"{'CODIGO':<10}"
+                                f"{'NOMBRE':<20}"
+                                f"{'PRECIO':>15}"
+                                f"{'CANTIDAD':>15}"
+                            )
+                            print("-" * 65)
+                        print(
+                            f"{codigos[i]:<10}"
+                            f"{nombres[i]:<20}"
+                            f"{('Q ' + format(precios[i], ',.2f')):>15}"
+                            f"{cantidades[i]:>15}"
+                        )
                         encontrado = True
                 if not encontrado:
                     print("No se encontró ningún producto con ese dato.")
-        # Opción 4: Eliminar producto
+                else:
+                    print("-" * 65)
+
+            print("=" * 65)
+        # Opción 4: elimina productos
         elif opcion == "4":
-            print("Eliminar producto")
+            print("\n" + "=" * 65)
+            print("                 ELIMINAR PRODUCTO")
+            print("=" * 65)
+
             codigo = input("Código del producto que quieres eliminar: ").strip().upper()
             if codigo in codigos:
                 posicion = codigos.index(codigo)
@@ -121,11 +165,13 @@ if acceso:
                     print("Eliminación cancelada.")
             else:
                 print("No existe un producto con ese código.")
-        # Opción 5: Cálculos del inventario
+
+            print("=" * 65)
+        # Opción 5: calculos del inventario
         elif opcion == "5":
-            print("\n" + "=" * 40)
-            print("       CALCULOS DEL INVENTARIO")
-            print("=" * 40)
+            print("\n" + "=" * 65)
+            print("                 CALCULOS DEL INVENTARIO")
+            print("=" * 65)
 
             if len(codigos) == 0:
                 print("\nNo hay productos registrados.")
@@ -168,10 +214,12 @@ if acceso:
                     f" - Q {precios[pos_barato]:,.2f}"
                 )
 
-            print("\n" + "=" * 40)
+            print("\n" + "=" * 65)
         # Opción 6: Salir
         elif opcion == "6":
-            print("Hasta luego")
+            print("\n" + "=" * 65)
+            print("                 HASTA LUEGO")
+            print("=" * 65)
         else:
             print("Opción no válida. Escribe un número del 1 al 6.")
 else:
