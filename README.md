@@ -30,5 +30,8 @@ Es de gran importancia mencionar que cada cambio o adición al proyecto fue disc
 
 # CONCLUSION
 El programa permite administrar el inventario de una tienda desde la consola: agregar, listar, buscar y eliminar productos, además de calcular el valor total, el promedio de precios y los productos más caros y más baratos.
+Además, el acceso con usuario y contraseña protege la información, y las validaciones evitan errores al ingresar los datos. 
+Es una herramienta sencilla y útil para que un negocio pequeño organice sus productos y tome las mejores decisiones.
+
 
 
