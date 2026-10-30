@@ -1,0 +1,10 @@
+# Opción 6: Salir
+        elif opcion == "6":
+            print("\n" + "=" * 65)
+            print("                 HASTA LUEGO")
+            print("=" * 65)
+        else:
+            print("Opción no válida. Escribe un número del 1 al 6.")
+else:
+    print("Demasiados intentos fallidos. El programa se cerrará.")
+    
