@@ -23,3 +23,11 @@
                     precios.append(float(precio_texto))
                     cantidades.append(int(cantidad_texto))
                     print("Producto agregado correctamente")
+
+#¿QUE HACE?
+#Registra un producto nuevo. Valida que:
+#El código no esté vacío ni repetido.
+#El nombre no esté vacío.
+#El precio y la cantidad sean números válidos.
+#Si todo está bien, hace append en las 4 listas y muestra el producto agregado. 
+#Las validaciones están para evitar datos incorrectos o que el programa se rompa.
