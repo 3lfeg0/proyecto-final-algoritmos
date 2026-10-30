@@ -16,4 +16,4 @@
 #¿QUE HACE?
 #Busca por código exacto o por nombre parcial (ignorando mayúsculas con .lower()). 
 #La variable encontrado sirve para imprimir el encabezado de la tabla solo una vez y para avisar si no hubo resultados. 
-
+#Está para localizar un producto sin revisar toda la lista.
