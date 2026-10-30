@@ -1,0 +1,28 @@
+# Opción 4: elimina productos
+        elif opcion == "4":
+            print("\n" + "=" * 65)
+            print("                 ELIMINAR PRODUCTO")
+            print("=" * 65)
+
+            codigo = input("Código del producto que quieres eliminar: ").strip().upper()
+            if codigo in codigos:
+                posicion = codigos.index(codigo)
+                print("Se eliminará:", nombres[posicion])
+                confirmar = input("¿Seguro? (s/n): ").strip().lower()
+                if confirmar == "s":
+                    codigos.pop(posicion)
+                    nombres.pop(posicion)
+                    precios.pop(posicion)
+                    cantidades.pop(posicion)
+                    print("Producto eliminado.")
+                else:
+                    print("Eliminación cancelada.")
+            else:
+                print("No existe un producto con ese código.")
+
+            print("=" * 65)
+
+#¿QUE HACE?
+#Busca el producto por código con .index(), pide confirmación (s/n) y luego usa .pop(posicion) en las 4 listas. 
+#Es importante borrar de las cuatro para que los datos sigan alineados. 
+#La confirmación evita borrar algo por error.
