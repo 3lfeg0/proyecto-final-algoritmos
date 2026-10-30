@@ -11,3 +11,7 @@ if acceso:
         print("5. Ver cálculos")
         print("6. Salir")
         opcion = input("Elige una opción: ")
+
+#¿QUE HACE?
+#Señala el inicio del menú principal el cual tiene 6 opciones diferentes. 
+#Es el ciclo while que se repite mostrando las 6 opciones hasta que el usuario elige “6” para salir.
