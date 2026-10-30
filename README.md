@@ -3,6 +3,7 @@
 # Integrantes.
 1. Angel Rolando Sánchez Juárez. 0903-26-9179
 2. Elfego Ovidio Hernández Cifuentes. 0903-26-7513
+3. Gabriel Estuardo Almengor Navarro. 0903-26-20291
 
 # Sistema de gestión de una tienda.
 
@@ -25,8 +26,9 @@ Cada producto tiene cuatro datos: "código, nombre, precio y cantidad". Los dato
 
 #  ORGANIZACION DEL EQUIPO
 
-Los integrantes del equipo trabajamos en un repositorio de Github, subiendo commits de manera constante, para poder entendernos mientras trabajabamos utilizamos la plataforma Meet para compartir ideas sobre el proyecto.
-Es de gran importancia mencionar que cada cambio o adición al proyecto fue discutida antes de llevarse a la practica. 
+Los integrantes del equipo trabajamos de manera colaborativa mediante un repositorio de GitHub, donde compartimos el código y registramos los avances del proyecto mediante commits constantes.
+Para mantener una buena comunicación, utilizamos la plataforma Google Meet, donde compartimos ideas, resolvimos dudas y coordinamos las diferentes actividades relacionadas con el desarrollo del sistema.
+Es importante mencionar que cada cambio o adición al proyecto fue discutido antes de llevarse a la práctica, procurando mantener una buena organización y lograr que todas las funciones trabajaran correctamente.
 
 # CONCLUSION
 El programa permite administrar el inventario de una tienda desde la consola: agregar, listar, buscar y eliminar productos, además de calcular el valor total, el promedio de precios y los productos más caros y más baratos.
