@@ -8,3 +8,5 @@
 else:
     print("Demasiados intentos fallidos. El programa se cerrará.")
     
+#¿QUE HACE?
+#Muestra el mensaje “HASTA LUEGO”. Al elegir "6", la condición del while (opcion != "6") deja de cumplirse y el programa termina.
