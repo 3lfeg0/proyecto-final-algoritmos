@@ -29,4 +29,6 @@ Los integrantes del equipo trabajamos en un repositorio de Github, subiendo comm
 Es de gran importancia mencionar que cada cambio o adición al proyecto fue discutida antes de llevarse a la practica. 
 
 # CONCLUSION
+El programa permite administrar el inventario de una tienda desde la consola: agregar, listar, buscar y eliminar productos, además de calcular el valor total, el promedio de precios y los productos más caros y más baratos.
+
 
