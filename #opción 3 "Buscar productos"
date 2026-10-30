@@ -12,3 +12,8 @@
                         encontrado = True
                 if not encontrado:
                     print("No se encontró ningún producto con ese dato.")
+
+#¿QUE HACE?
+#Busca por código exacto o por nombre parcial (ignorando mayúsculas con .lower()). 
+#La variable encontrado sirve para imprimir el encabezado de la tabla solo una vez y para avisar si no hubo resultados. 
+
