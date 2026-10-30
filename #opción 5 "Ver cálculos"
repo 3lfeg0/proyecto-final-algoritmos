@@ -47,4 +47,9 @@
             print("\n" + "=" * 65)
 
 #¿QUE HACE?
-#
+#Recorre las listas y calcula:
+#Valor total del inventario (precio × cantidad de cada producto).
+#Total de unidades.
+#Precio promedio.
+#Producto más caro y más barato (guardando su posición en pos_caro y pos_barato).
+#Sirve para tener un resumen del negocio.
