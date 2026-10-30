@@ -28,3 +28,8 @@
                 print(f"Total de productos: {len(codigos)}")
 
             print("=" * 65)
+
+#¿QUE HACE?
+#Muestra todos los productos en una tabla organizada con un for que recorre las listas. 
+#Si no hay productos, avisa. 
+#Sirve para ver el inventario completo de un vistazo.
